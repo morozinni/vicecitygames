@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Регистрация — Vice City</title>
+  <!-- Стили -->
+  <link href="../styles/main.css" rel="stylesheet"/>
+  <link href="../styles/register.css" rel="stylesheet"/>
+</head>
+<body>
+  <div class="registration-container">
+    <!-- Шаг 1: Ник -->
+    <div class="registration-step active" id="step-1">
+      <h2>Как тебя зовут?</h2>
+      <input id="nickname" placeholder="Введите никнейм" type="text"/>
+      <button onclick="nextStep()">Далее</button>
+    </div>
+    <!-- Шаг 2: Пол -->
+    <div class="registration-step" id="step-2">
+      <h2>Выбери пол</h2>
+      <div class="gender-select">
+        <button onclick="selectGender('male')">Мужской</button>
+        <button onclick="selectGender('female')">Женский</button>
+      </div>
+    </div>
+    <!-- Шаг 3: Скин -->
+    <div class="registration-step" id="step-3">
+      <h2>Выбери скин</h2>
+      <div class="skins-container">
+        <img alt="Скин 1" onclick="selectSkin(1)" src="../assets/skins/skin1.png"/>
+        <img alt="Скин 2" onclick="selectSkin(2)" src="../assets/skins/skin2.png"/>
+        <img alt="Скин 3" onclick="selectSkin(3)" src="../assets/skins/skin3.png"/>
+      </div>
+      <button onclick="nextStep()">Далее</button>
+    </div>
+    <!-- Шаг 4: Подписка -->
+    <div class="registration-step" id="step-4">
+      <h2>Подпишись на наш Telegram-канал</h2>
+      <a class="btn-subscribe" href="https://t.me/your_channel" target="_blank">Подписаться</a>
+      <button onclick="nextStep()">Я подписался</button>
+    </div>
+    <!-- Шаг 5: Финал -->
+    <div class="registration-step" id="step-5">
+      <h2>Добро пожаловать, <span id="nickname-final"></span>!</h2>
+      <p>Ты успешно зарегистрирован. Погнали в Vice City!</p>
+      <button onclick="finishRegistration()">Вход</button>
+    </div>
+  </div>
+  <!-- Скрипты -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="../scripts/telegram.js"></script>
+  <script src="../scripts/register.js"></script>
+  <script src="../scripts/layout.js"></script>
+</body>
+</html>

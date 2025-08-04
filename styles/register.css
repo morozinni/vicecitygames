@@ -1,0 +1,94 @@
+/* Только для страницы регистрации */
+
+.registration-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 24px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: rgba(20, 20, 28, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(255, 0, 204, 0.4);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.registration-step {
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.registration-step.active {
+  display: flex;
+}
+
+.registration-step h2 {
+  font-size: 1.4rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 4px #ff00cc;
+}
+
+input[type="text"] {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 2px solid #ff00cc;
+  background: #1e1e2a;
+  color: #fff;
+  outline: none;
+}
+
+.gender-select {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.gender-select button {
+  flex: 1;
+}
+
+.skins-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.skins-container img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.skins-container img:hover {
+  transform: scale(1.05);
+}
+
+.skins-container img.selected {
+  border-color: #ff00cc;
+  box-shadow: 0 0 10px #ff00cc;
+}
+
+.btn-subscribe {
+  display: block;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #0088cc;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

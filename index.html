@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vice City — Главное меню</title>
+  <link rel="stylesheet" href="./styles/main.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo-container">
+      <img src="./assets/logo.png" alt="Vice City Logo" class="logo-img" />
+    </div>
+  </header>
+
+  <div class="menu-columns">
+    <section class="block news">
+      <h2>📰 Новости</h2>
+      <p><strong>04.08</strong> — Запуск бета-версии</p>
+      <p><strong>03.08</strong> — Добавлены новые скины</p>
+      <p><strong>02.08</strong> — Балансировка боёв</p>
+    </section>
+
+    <section class="block rating">
+      <h2>🏆 Рейтинг игроков</h2>
+      <div class="rating-columns">
+        <div>
+          <h3>📈 По уровню</h3>
+          <ol>
+            <li>@TopPlayer — 1330</li>
+            <li>@BBASSIC — 980</li>
+            <li>@ПСИХ — 865</li>
+          </ol>
+        </div>
+        <div>
+          <h3>💰 По богатству</h3>
+          <ol>
+            <li>@MoneyKing — $1.2M</li>
+            <li>@CryptoBoss — $900K</li>
+            <li>@Don — $700K</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <button class="main-button" onclick="location.href='./pages/register.html'">🎮 Войти в игру</button>
+  </footer>
+</body>
+</html>
