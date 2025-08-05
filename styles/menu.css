@@ -1,52 +1,56 @@
-.menu-container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.columns {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
-}
-
-.block {
-  background: #1a1a1a;
-  border: 2px solid #ff5ec4;
-  border-radius: 12px;
-  padding: 15px;
-  box-shadow: 0 0 10px #ff5ec4;
-  flex: 1;
-  min-width: 280px;
-}
-
-.rating-columns {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.rating-columns div {
-  flex: 1;
-}
-
-footer {
+/* === Vice City Style Header Block === */
+.info-header-centered {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 0 auto 30px;
+  max-width: 960px;
+  flex-wrap: wrap;
 }
 
-.main-button {
-  padding: 14px 28px;
-  font-size: 18px;
-  background-color: #ff5ec4;
+.info-photo {
+  flex-shrink: 0;
+}
+
+.info-photo img {
+  width: 260px;
+  max-width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 0 12px #00f0ff, 0 0 24px rgba(0, 240, 255, 0.25);
+  filter: brightness(1.05) saturate(1.2);
+}
+
+.info-text {
+  flex: 1;
+  min-width: 280px;
   color: white;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
-  box-shadow: 0 0 10px #ff5ec4;
+}
+
+.info-text h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 6px #ff5ec4, 0 0 12px #ff5ec4;
+}
+
+.vc-text {
+  color: #ff5ec4;
+  text-shadow: 0 0 4px #ff5ec4, 0 0 10px #ff89e2;
+}
+
+.info-text p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .info-header-centered {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-photo {
+    order: -1;
+  }
 }
