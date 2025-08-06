@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vice City — Главное меню</title>
   <link rel="stylesheet" href="./styles/main.css" />
-  <link rel="stylesheet" href="./styles/menu.css" />
 </head>
 <body>
   <header class="main-header">
@@ -14,59 +13,42 @@
     </div>
   </header>
 
-  <div class="menu-container">
-    <section class="info-header-centered">
-  <div class="info-photo">
-    <img src="./assets/city.png" alt="Vice City Art" />
-  </div>
-  <div class="info-text">
-    <h1>🌴 Добро пожаловать в <span class="vc-text">VICE CITY</span>! 🌴</h1>
-    <p class="vc-subtext">
-      Vice City — это не просто город. Это сцена, где каждый вечер — твой выход.<br />
-      Бабки, тачки, респект, стиль — бери всё. Или уйди ни с чем.
-    </p>
-    <div class="vc-button-wrapper vc-align-right">
-      <button class="main-button" onclick="location.href='./pages/register.html'">
-        🎮 Войти в игру
-      </button>
-    </div>
-  </div>
-</section>
+  <div class="menu-columns">
+    <section class="block news">
+      <h2>📰 Новости</h2>
+      <p><strong>04.08</strong> — Запуск бета-версии</p>
+      <p><strong>03.08</strong> — Добавлены новые скины</p>
+      <p><strong>02.08</strong> — Балансировка боёв</p>
+    </section>
 
-    <div class="menu-columns">
-      <section class="block news">
-        <h2>📰 Новости</h2>
-        <p><strong>04.08</strong> — Запуск бета-версии</p>
-        <p><strong>03.08</strong> — Добавлены новые скины</p>
-        <p><strong>02.08</strong> — Балансировка боёв</p>
-      </section>
-
-      <section class="block rating">
-        <h2>🏆 Рейтинг игроков</h2>
-        <div class="rating-columns">
-          <div>
-            <h3>📈 По уровню</h3>
-            <ol>
-              <li>@TopPlayer — 1330</li>
-              <li>@BBASSIC — 980</li>
-              <li>@ПСИХ — 865</li>
-            </ol>
-          </div>
-          <div>
-            <h3>💰 По богатству</h3>
-            <ol>
-              <li>@MoneyKing — $1.2M</li>
-              <li>@CryptoBoss — $900K</li>
-              <li>@Don — $700K</li>
-            </ol>
-          </div>
+    <section class="block rating">
+      <h2>🏆 Рейтинг игроков</h2>
+      <div class="rating-columns">
+        <div>
+          <h3>📈 По уровню</h3>
+          <ol>
+            <li>@TopPlayer — 1330</li>
+            <li>@BBASSIC — 980</li>
+            <li>@ПСИХ — 865</li>
+          </ol>
         </div>
-      </section>
-    </div>
-
-    
+        <div>
+          <h3>💰 По богатству</h3>
+          <ol>
+            <li>@MoneyKing — $1.2M</li>
+            <li>@CryptoBoss — $900K</li>
+            <li>@Don — $700K</li>
+          </ol>
+        </div>
+      </div>
+    </section>
   </div>
 
+  <footer>
+    <button class="main-button" onclick="location.href='./pages/profile.html'">🎮 Войти в игру</button>
+  </footer>
+
+  <!-- Telegram WebApp API -->
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <script src="./scripts/telegram.js"></script>
 </body>
