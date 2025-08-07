@@ -1,20 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
   const header = document.createElement('header');
-  header.innerHTML = `
+  header.innerHTML = \`
     <img src="../assets/logo.png" alt="Vice City" class="logo" />
     <h1 class="logo-text">Vice City</h1>
-  `;
+  \`;
   document.body.insertBefore(header, document.body.firstChild);
 
   // Orientation & mobile lock
   const lockScreen = document.createElement('div');
   lockScreen.id = 'orientation-lock';
-  lockScreen.innerHTML = `
+  lockScreen.innerHTML = \`
     <div style="text-align: center; color: #f0f; font-family: 'Arial Black', sans-serif; padding: 30px;">
       <h2 style="font-size: 28px;">🌴 Добро пожаловать в Vice City!</h2>
       <p style="font-size: 20px;">⛔ Пожалуйста, поверни телефон в горизонтальный режим.</p>
     </div>
-  `;
+  \`;
   Object.assign(lockScreen.style, {
     display: 'none',
     position: 'fixed',
